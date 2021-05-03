@@ -11,7 +11,7 @@ export default function App() {
   const handleClick = async () => {
     const res = await fetch(url, { method: "GET" });
     const data = await res.json();
-    console.log(data);
+
     setUsers([...users, data.results[0]]);
   };
   return (
